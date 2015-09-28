@@ -4,13 +4,13 @@ express react webpack es6 node
 #### 
   npm install
   
-###### development
+#### development
   npm run dev
-###### product
+#### product
   npm run pro  
-###### static development
+#### static development
   npm run start
-###### node and static development 
+#### node and static development 
   npm run watch  
   
 
