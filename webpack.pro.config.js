@@ -11,9 +11,9 @@ module.exports = {
       './app/main'
     ],
     output: {
-        path: path.join(__dirname, 'app/js'),
+        path: path.join(__dirname, 'app/builder'),
         filename: '[name].js',
-        publicPath: "/app/js/"
+        publicPath: "/app/builder/"
     },
     resolve: {
       extensions: ['', '.js', '.jsx']

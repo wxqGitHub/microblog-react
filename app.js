@@ -30,11 +30,15 @@ app.use(session({
     saveUninitialized: true,
 }));
 
-app.use(express.static(path.join(__dirname, 'app')));
+
+
 
 
 if (app.get('env') === 'development') {
+    app.use(express.static(path.join(__dirname, 'app')));
     require('./webpack.server')(app);
+}else {
+    app.use(express.static(path.join(__dirname, '/')));
 }
 
 require('./routes/routes')(app);

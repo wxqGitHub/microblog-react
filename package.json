@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "webpack --config webpack.pro.config.js",
-    "pro": "webpack -p --config webpack.pro.config.js",
+    "dev": "webpack --config webpack.pro.config.js && NODE_ENV=pro  node app",
+    "pro": "webpack -p --config webpack.pro.config.js && NODE_ENV=pro  node app",
     "start": "NODE_ENV=development  node app",
     "node": "NODE_ENV=pro  node app",
     "watch": "NODE_ENV=development  supervisor app"

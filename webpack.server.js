@@ -7,7 +7,7 @@ var config = function(app) {
     var config = require('./webpack.dev.config');
     var proxy = require('proxy-middleware');
     var port = 3002;
-    app.use('/app/js', proxy('http://127.0.0.1:'+port+'/app/js'));
+    app.use('/app/builder', proxy('http://127.0.0.1:'+port+'/app/builder'));
     var server = new WebpackDevServer(webpack(config), {
         publicPath: config.output.publicPath,
         hot: true,
