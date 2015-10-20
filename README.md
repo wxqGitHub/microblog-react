@@ -1,7 +1,7 @@
 # microblog-react
 express react webpack es6 node
 
-#### init
+## init
   npm install
 
 ## server
